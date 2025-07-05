@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OnyXOracle Hotel - Book Your Stay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">OnyXOracal Hotel</a>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="nav-toggle" aria-label="Open Navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to OnyXOracle Hotel</h1>
+            <p>Your luxury getaway awaits. Book your stay today!</p>
+            <form id="booking-form" autocomplete="off">
+                <div class="form-row">
+                    <input type="date" id="checkin" required>
+                    <input type="date" id="checkout" required>
+                    <input type="number" id="guests" min="1" placeholder="Guests" required>
+                    <button type="submit">Check Availability</button>
+                </div>
+                <div id="form-error"></div>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="rooms" class="container">
+        <h2>Popular Rooms</h2>
+        <div id="rooms-list" class="rooms-list">
+        
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About OnyXOracle Hotel</h2>
+        <p>
+            
+OnyXoracal is a premium hotel experience offering luxury, comfort, and modern amenities for travelers seeking elegance and relaxation. Book your stay with us and enjoy unforgettable hospitality.
+
+        </p>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div>
+                <h3>Contact Us</h3>
+                <p>123 Sunshine Blvd, Orlando, FL 32801, United States</p>
+                <p>+1 234 567 890</p>
+                <p>info@OnyXOracal.com</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 OnyXOracal Hotel. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" id="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Room Preview">
+        <div class="lightbox-controls">
+            <button id="prev-img" aria-label="Previous Image">&#10094;</button>
+            <button id="next-img" aria-label="Next Image">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
